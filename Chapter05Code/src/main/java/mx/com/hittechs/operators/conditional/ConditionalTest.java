@@ -4,7 +4,7 @@ package mx.com.hittechs.operators.conditional;
  *
  * @author Hittechs Training & Consulting
  * @web www.hittechs.com.mx
- * @main contacto@hittechs.com.mx
+ * @mail contacto@hittechs.com.mx
  */
 public class ConditionalTest {
 
