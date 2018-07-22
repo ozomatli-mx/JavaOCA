@@ -9,7 +9,7 @@ package mx.com.hittechs.arrays;
 public class ArrayTest {
 
     public static void main(String[] args) {
-        int[] x = new int[4];
+        int[] x = new int[3];
         x[0] = 5;
         x[1] = 10;
         x[2] = 15;
