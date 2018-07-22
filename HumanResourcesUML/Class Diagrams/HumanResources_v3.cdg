@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="HumanResources">
+  <ClassDiagramComponents>
+    <Class name="Department" package="mx.com.hittechs.model" visibility="public" xPosition="24.0" yPosition="204.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="title" type="String" visibility="private"/>
+        <Field name="location" type="String" visibility="private"/>
+        <Field name="manager" type="Employee" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getTitle" returnType="String" visibility="public"/>
+        <Method name="setTitle" returnType="void" visibility="public">
+          <Argument type="String" name="title"/>
+        </Method>
+        <Method name="getLocation" returnType="String" visibility="public"/>
+        <Method name="setLocation" returnType="void" visibility="public">
+          <Argument type="String" name="location"/>
+        </Method>
+        <Method name="getManager" returnType="Employee" visibility="public"/>
+        <Method name="setManager" returnType="void" visibility="public">
+          <Argument type="Employee" name="manager"/>
+        </Method>
+        <Method name="getDetails" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Employee" package="mx.com.hittechs.model" visibility="public" xPosition="366.0" yPosition="20.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="firstName" type="String" visibility="private"/>
+        <Field name="lastName" type="String" visibility="private"/>
+        <Field name="age" type="int" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="phoneNumber" type="String" visibility="private"/>
+        <Field name="salary" type="double" visibility="private"/>
+        <Field name="hireDate" type="String" visibility="private"/>
+        <Field name="department" type="Department" visibility="private"/>
+        <Field name="job" type="Job" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getFirstName" returnType="String" visibility="public"/>
+        <Method name="setFirstName" returnType="void" visibility="public">
+          <Argument type="String" name="firstName"/>
+        </Method>
+        <Method name="getLastName" returnType="String" visibility="public"/>
+        <Method name="setLastName" returnType="void" visibility="public">
+          <Argument type="String" name="lastName"/>
+        </Method>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="getPhoneNumber" returnType="String" visibility="public"/>
+        <Method name="setPhoneNumber" returnType="void" visibility="public">
+          <Argument type="String" name="phoneNumber"/>
+        </Method>
+        <Method name="getSalary" returnType="double" visibility="public"/>
+        <Method name="setSalary" returnType="void" visibility="public">
+          <Argument type="double" name="salary"/>
+        </Method>
+        <Method name="getHireDate" returnType="String" visibility="public"/>
+        <Method name="setHireDate" returnType="void" visibility="public">
+          <Argument type="String" name="hireDate"/>
+        </Method>
+        <Method name="getDepartment" returnType="Department" visibility="public"/>
+        <Method name="setDepartment" returnType="void" visibility="public">
+          <Argument type="Department" name="department"/>
+        </Method>
+        <Method name="getJob" returnType="Job" visibility="public"/>
+        <Method name="setJob" returnType="void" visibility="public">
+          <Argument type="Job" name="job"/>
+        </Method>
+        <Method name="getDetails" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Job" package="mx.com.hittechs.model" visibility="public" xPosition="737.0" yPosition="204.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="title" type="String" visibility="private"/>
+        <Field name="minSalary" type="double" visibility="private"/>
+        <Field name="maxSalary" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getTitle" returnType="String" visibility="public"/>
+        <Method name="setTitle" returnType="void" visibility="public">
+          <Argument type="String" name="title"/>
+        </Method>
+        <Method name="getMinSalary" returnType="double" visibility="public"/>
+        <Method name="setMinSalary" returnType="void" visibility="public">
+          <Argument type="double" name="minSalary"/>
+        </Method>
+        <Method name="getMaxSalary" returnType="double" visibility="public"/>
+        <Method name="setMaxSalary" returnType="void" visibility="public">
+          <Argument type="double" name="maxSalary"/>
+        </Method>
+        <Method name="getDetails" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="HumanResourcesTest" package="mx.com.hittechs.test" visibility="public" xPosition="1032.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="mx.com.hittechs.model.Department" target="mx.com.hittechs.model.Employee" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="department" source="mx.com.hittechs.model.Employee" target="mx.com.hittechs.model.Department" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="manager" source="mx.com.hittechs.model.Department" target="mx.com.hittechs.model.Employee" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="mx.com.hittechs.model.Employee" target="mx.com.hittechs.model.Job" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="job" source="mx.com.hittechs.model.Employee" target="mx.com.hittechs.model.Job" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="mx.com.hittechs.model.Employee" target="mx.com.hittechs.model.Department" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
