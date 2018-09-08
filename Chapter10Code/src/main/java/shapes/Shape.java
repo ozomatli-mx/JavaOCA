@@ -9,7 +9,7 @@ package shapes;
 public class Shape {
 
     public double getArea() {
-        return ?;
+        return 0;
     }
 }
 

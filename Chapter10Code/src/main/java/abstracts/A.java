@@ -6,13 +6,13 @@ package abstracts;
  * @web www.hittechs.com.mx
  * @mail contacto@hittechs.com.mx
  */
-public abstract class A {
-    void a();
-}
-
-abstract class B extends A{
-    abstract b(){};
-}
-
-class C extends B{
-}
+//public abstract class A {
+//    void a();
+//}
+//
+//abstract class B extends A{
+//    abstract b(){};
+//}
+//
+//class C extends B{
+//}

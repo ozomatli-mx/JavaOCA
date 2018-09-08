@@ -18,9 +18,9 @@ public class AnimalTest {
 //        alimentar(animales);
     }
 
-    public static void alimentar(List<Animal> animal) {
-        for (Animal a : animal) {
-            a.comer();
-        }
-    }
+//    public static void alimentar(List<Animal> animal) {
+//        for (Animal a : animal) {
+//            a.comer();
+//        }
+//    }
 }
