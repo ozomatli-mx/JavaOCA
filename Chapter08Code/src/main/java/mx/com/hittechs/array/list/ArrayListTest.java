@@ -19,7 +19,7 @@ public class ArrayListTest {
         myList.add("Desmond");
         System.out.println(myList);
         System.out.println("get(1): " + myList.get(1));
-        myList.remove("size(): " + myList.size());
+        System.out.println("size(): " + myList.size());
         System.out.println("indexOf(\"Mary\"): " + myList.indexOf("Mary"));
         myList.remove("Mary");
         System.out.println(myList);
