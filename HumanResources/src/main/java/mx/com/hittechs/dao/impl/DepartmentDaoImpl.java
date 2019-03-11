@@ -1,5 +1,5 @@
-//package mx.com.hittechs.controller.dao.impl;
-//
+package mx.com.hittechs.dao.impl;
+
 //import java.sql.PreparedStatement;
 //import java.sql.ResultSet;
 //import java.sql.SQLException;

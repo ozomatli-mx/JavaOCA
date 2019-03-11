@@ -1,5 +1,5 @@
-//package mx.com.hittechs.dao;
-//
+package mx.com.hittechs.dao;
+
 //import java.util.List;
 //import mx.com.hittechs.model.Job;
 //
